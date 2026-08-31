@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TechPana
 
-## Getting Started
+Bilingual (TH/EN) marketing site for TechPana, a software development studio. Built from the [design brief](.) covering IA, UX principles, visual system, copy, and SEO/AEO strategy.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router, Turbopack)
+- Tailwind CSS v4 + shadcn/ui (Base UI primitives)
+- next-intl — locale routing at `/th` and `/en`
+- Motion — scroll reveal / micro-interactions
+- Sonner — toast notifications
+- Zod — request validation
+- Resend — background sales-team notification email (optional, see below)
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — this redirects to `/th` (the default locale). English lives at `/en`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` for the optional integrations:
 
-## Learn More
+```bash
+# Sales-team heads-up email, fired best-effort when a visitor finishes the
+# wizard and heads to LINE (optional — without these, it's just logged to
+# the server console instead of emailed)
+RESEND_API_KEY=
+LEAD_NOTIFICATION_EMAIL=
+LEAD_FROM_EMAIL="TechPana <onboarding@resend.dev>"
 
-To learn more about Next.js, take a look at the following resources:
+# LINE Official Account — generic "add friend" link shown in the header/footer/hero
+NEXT_PUBLIC_LINE_URL=https://line.me/ti/p/~techpana
+# Same OA's LINE ID (starts with "@"), used to deep-link into a chat with a
+# pre-filled message once the brief wizard is complete
+NEXT_PUBLIC_LINE_ID=@techpana
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Used to build absolute URLs in sitemap.xml / robots.txt
+NEXT_PUBLIC_SITE_URL=https://techpana.com
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project structure
 
-## Deploy on Vercel
+- `src/app/[locale]/` — locale-scoped layout and homepage
+- `src/app/api/lead/` — fires a best-effort sales-team notification when the wizard completes
+- `src/components/sections/brief-wizard.tsx` — the choice-only wizard that hands off to LINE with a pre-filled message
+- `src/components/sections/` — one component per landing page section
+- `src/components/layout/` — header, footer, locale switcher
+- `src/messages/{th,en}.json` — all page copy, per locale
+- `src/i18n/` — next-intl routing config
+- `public/llms.txt` — AEO summary file for AI crawlers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## What's still placeholder
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Per the brief's roadmap, the following are intentionally left as clearly-labeled placeholders until real content exists:
+
+- **Work / case studies** — no real screenshots or client results yet (Phase 3)
+- **Testimonials** — no fabricated reviews; real ones go in once clients consent (Phase 3)
+
+## Learn more
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [next-intl Documentation](https://next-intl.dev)
+- [shadcn/ui Documentation](https://ui.shadcn.com)

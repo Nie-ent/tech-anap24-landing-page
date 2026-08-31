@@ -1,0 +1,19 @@
+# TechPana
+
+> TechPana is a software development studio in Thailand. We build websites, mobile apps, and custom software/ERP systems for startups, growing businesses, and enterprises — from first MVP to enterprise-grade systems. The team communicates fluently in Thai and English.
+
+## Services
+- Web Development — corporate websites and web applications
+- Mobile App — iOS and Android apps
+- Custom Software & ERP — purpose-built systems and back-office tools
+- MVP Development — turning an idea into a testable product quickly
+
+## Process
+Discovery → Design → Build → Launch → Support
+
+## Pages
+- Homepage (Thai): /th
+- Homepage (English): /en
+
+## Contact
+Submit a project brief through the contact form on the homepage, or reach out via LINE (link in the site header/footer).

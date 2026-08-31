@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "TechPana — The software partner that scales with you",
+    "description": "TechPana builds websites, apps, and custom software for startups, growing businesses, and enterprises that need a reliable long-term partner."
+  },
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "ctaBrief": "Submit a brief",
+    "ctaLine": "Chat on LINE"
+  },
+  "hero": {
+    "eyebrow": "Software partner for Thai and international businesses",
+    "headline": "The software partner that scales with you — MVP to enterprise",
+    "subhead": "We design and build websites, apps, and software systems that work in the real world — from first idea to enterprise-grade systems.",
+    "ctaPrimary": "Submit a project brief",
+    "ctaSecondary": "Chat on LINE",
+    "proofLabel": "A team that communicates fluently in Thai and English"
+  },
+  "audience": {
+    "eyebrow": "Where are you starting from",
+    "heading": "Where are you starting from?",
+    "subheading": "Pick the path that matches what you're looking for to see the most relevant services and case studies.",
+    "cards": [
+      {
+        "tag": "For startups / SMEs",
+        "title": "Starting with an MVP on a tight budget",
+        "description": "You need a website, app, or system that works, fast — within a budget and timeline you can control.",
+        "href": "#services"
+      },
+      {
+        "tag": "For growing businesses",
+        "title": "Want a system that scales with you",
+        "description": "You need a partner for the long run, a process you can track, and clear communication at every step.",
+        "href": "#process"
+      },
+      {
+        "tag": "For enterprise / international teams",
+        "title": "Comparing a Thai team to outsourcing options",
+        "description": "You want to see international-caliber work, a team fluent in English, and clear SLAs and security practices.",
+        "href": "#work"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "heading": "From websites to back-office systems.",
+    "subheading": "Pick the service that matches what you need — we handle planning through delivery and post-launch support.",
+    "items": [
+      {
+        "title": "Web Development",
+        "description": "Corporate sites and web applications that are fast, secure, and easy to maintain."
+      },
+      {
+        "title": "Mobile App",
+        "description": "iOS and Android apps, from MVP through full-featured release."
+      },
+      {
+        "title": "Custom Software & ERP",
+        "description": "Purpose-built software and back-office systems designed around your real business processes."
+      },
+      {
+        "title": "MVP Development",
+        "description": "Turn an idea into something real users can test, as fast as possible, on a controlled budget."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Our process",
+    "heading": "Transparent process, every step tracked.",
+    "subheading": "Every project follows the same process, so you always know what's happening and when it'll be done.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "We align on business goals, users, and scope together."
+      },
+      {
+        "title": "Design",
+        "description": "UX/UI and system architecture, reviewed with you before development starts."
+      },
+      {
+        "title": "Build",
+        "description": "Development in short cycles, with regular progress updates."
+      },
+      {
+        "title": "Launch",
+        "description": "Testing, delivery, and go-live with a plan for managing risk."
+      },
+      {
+        "title": "Support",
+        "description": "Post-launch support — fixes and new features as your product grows."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Work",
+    "heading": "Our work",
+    "subheading": "Case studies are in progress — real screenshots and results from client projects are coming soon.",
+    "placeholderNote": "Full case studies will be added in the next phase."
+  },
+  "differentiators": {
+    "eyebrow": "Why TechPana",
+    "heading": "Why TechPana",
+    "items": [
+      {
+        "title": "Bilingual Thai team",
+        "description": "Talk directly with the development team in Thai or English — no middleman."
+      },
+      {
+        "title": "Transparent pricing",
+        "description": "Scope and pricing are clear before the project starts. No hidden costs."
+      },
+      {
+        "title": "Modern tech stack",
+        "description": "We use technology that's easy to maintain and built to scale."
+      },
+      {
+        "title": "Trackable process",
+        "description": "Regular progress updates, clear documentation, and a direct line of contact at every step."
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Technology we use",
+    "heading": "The technology we actually build with"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What clients say",
+    "placeholderNote": "Real client testimonials will be published here once each client has agreed to be featured."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Questions clients ask before we start",
+    "items": [
+      {
+        "question": "How do I start a project with TechPana?",
+        "answer": "Submit your project details through the form or message us on LINE. We'll get back to you within one business day to talk through the details."
+      },
+      {
+        "question": "How long does a project take?",
+        "answer": "It depends on scope. An MVP typically takes a few weeks; larger systems are broken into phases, each with a clear delivery date."
+      },
+      {
+        "question": "Do you provide support after launch?",
+        "answer": "Yes. We offer post-launch support, including fixes and new feature development, based on what we agree on."
+      },
+      {
+        "question": "Do you work with international clients?",
+        "answer": "Yes. Our team communicates fluently in English and can schedule meetings around your time zone."
+      }
+    ]
+  },
+  "finalCta": {
+    "heading": "Ready to start your project?",
+    "subheading": "Pick a few answers, then continue on LINE.",
+    "ctaPrimary": "Submit a project brief",
+    "ctaSecondary": "Chat on LINE"
+  },
+  "wizard": {
+    "eyebrow": "Start your project",
+    "heading": "Tap to choose",
+    "back": "Back",
+    "questionService": "What service do you need?",
+    "questionBudget": "What's your budget?",
+    "questionTimeline": "When do you want to start?",
+    "budgetOptions": [
+      "Under $3,000",
+      "$3,000–$10,000",
+      "$10,000–$30,000",
+      "Over $30,000",
+      "Not sure yet"
+    ],
+    "timelineOptions": [
+      "Right away",
+      "1–3 months",
+      "3–6 months",
+      "Just exploring"
+    ],
+    "reviewHeading": "Here's what you picked",
+    "reviewService": "Service",
+    "reviewBudget": "Budget",
+    "reviewTimeline": "Timeline",
+    "edit": "Edit",
+    "lineCta": "Continue on LINE",
+    "restart": "Start over",
+    "messageGreeting": "Hi! I'm interested in TechPana's services.",
+    "messageService": "Service",
+    "messageBudget": "Approximate budget",
+    "messageTimeline": "Timeline to start"
+  },
+  "footer": {
+    "tagline": "The software partner that scales with you — from first MVP to enterprise systems.",
+    "navHeading": "Menu",
+    "contactHeading": "Contact",
+    "language": "Language",
+    "copyright": "All rights reserved."
+  }
+}
