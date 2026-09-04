@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
@@ -11,9 +12,14 @@ export function SiteFooter() {
     <footer className="border-t border-border">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <Link href="/" className="flex items-baseline gap-1 text-[15px] font-semibold tracking-tight">
-            {siteConfig.name}
-            <span className="text-accent">.</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt={siteConfig.name}
+              width={1535}
+              height={903}
+              className="h-9 w-auto"
+            />
           </Link>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
             {t("tagline")}

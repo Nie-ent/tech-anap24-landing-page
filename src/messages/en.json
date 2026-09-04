@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TechPana — The software partner that scales with you",
-    "description": "TechPana builds websites, apps, and custom software for startups, growing businesses, and enterprises that need a reliable long-term partner."
+    "title": "Tech A-Nap — The software partner that scales with you",
+    "description": "Tech A-Nap builds websites, apps, and custom software for startups, growing businesses, and enterprises that need a reliable long-term partner."
   },
   "nav": {
     "services": "Services",
@@ -102,8 +102,8 @@
     "placeholderNote": "Full case studies will be added in the next phase."
   },
   "differentiators": {
-    "eyebrow": "Why TechPana",
-    "heading": "Why TechPana",
+    "eyebrow": "Why Tech A-Nap",
+    "heading": "Why Tech A-Nap",
     "items": [
       {
         "title": "Bilingual Thai team",
@@ -137,7 +137,7 @@
     "heading": "Questions clients ask before we start",
     "items": [
       {
-        "question": "How do I start a project with TechPana?",
+        "question": "How do I start a project with Tech A-Nap?",
         "answer": "Submit your project details through the form or message us on LINE. We'll get back to you within one business day to talk through the details."
       },
       {
@@ -187,7 +187,7 @@
     "edit": "Edit",
     "lineCta": "Continue on LINE",
     "restart": "Start over",
-    "messageGreeting": "Hi! I'm interested in TechPana's services.",
+    "messageGreeting": "Hi! I'm interested in Tech A-Nap's services.",
     "messageService": "Service",
     "messageBudget": "Approximate budget",
     "messageTimeline": "Timeline to start"

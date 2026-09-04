@@ -1,6 +1,6 @@
-# TechPana
+# Tech A-Nap
 
-Bilingual (TH/EN) marketing site for TechPana, a software development studio. Built from the [design brief](.) covering IA, UX principles, visual system, copy, and SEO/AEO strategy.
+Bilingual (TH/EN) marketing site for Tech A-Nap, a software development studio. Built from the [design brief](.) covering IA, UX principles, visual system, copy, and SEO/AEO strategy.
 
 ## Stack
 
@@ -31,16 +31,16 @@ Create a `.env.local` for the optional integrations:
 # the server console instead of emailed)
 RESEND_API_KEY=
 LEAD_NOTIFICATION_EMAIL=
-LEAD_FROM_EMAIL="TechPana <onboarding@resend.dev>"
+LEAD_FROM_EMAIL="Tech A-Nap <onboarding@resend.dev>"
 
 # LINE Official Account — generic "add friend" link shown in the header/footer/hero
-NEXT_PUBLIC_LINE_URL=https://line.me/ti/p/~techpana
+NEXT_PUBLIC_LINE_URL=https://line.me/ti/p/~techanap
 # Same OA's LINE ID (starts with "@"), used to deep-link into a chat with a
 # pre-filled message once the brief wizard is complete
-NEXT_PUBLIC_LINE_ID=@techpana
+NEXT_PUBLIC_LINE_ID=@techanap
 
 # Used to build absolute URLs in sitemap.xml / robots.txt
-NEXT_PUBLIC_SITE_URL=https://techpana.com
+NEXT_PUBLIC_SITE_URL=https://techanap.com
 ```
 
 ## Project structure

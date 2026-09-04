@@ -51,7 +51,7 @@
 }
 
 :root {
-  /* TechPana design brief — Professional Corporate, light mode */
+  /* Tech A-Nap design brief — Professional Corporate, light mode */
   --bg: #f4f6f8;
   --surface: #ffffff;
   --surface-2: #eaeef1;
@@ -98,7 +98,7 @@
 }
 
 .dark {
-  /* TechPana design brief — Professional Corporate, dark mode */
+  /* Tech A-Nap design brief — Professional Corporate, dark mode */
   --bg: #0e1318;
   --surface: #161c22;
   --surface-2: #1c242b;

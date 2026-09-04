@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     const { Resend } = await import("resend");
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
-      from: process.env.LEAD_FROM_EMAIL ?? "TechPana <onboarding@resend.dev>",
+      from: process.env.LEAD_FROM_EMAIL ?? "Tech A-Nap <onboarding@resend.dev>",
       to,
       subject: `Someone is heading to LINE (${lead.service})`,
       text: [

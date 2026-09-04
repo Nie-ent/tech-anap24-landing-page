@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "TechPana",
-  lineUrl: process.env.NEXT_PUBLIC_LINE_URL ?? "https://line.me/ti/p/~techpana",
+  name: "Tech A-Nap",
+  lineUrl: process.env.NEXT_PUBLIC_LINE_URL ?? "https://line.me/ti/p/~techanap",
   // LINE Official Account ID (starts with "@"), used to deep-link into a chat
   // with a pre-filled message via LINE's oaMessage URL scheme.
-  lineId: process.env.NEXT_PUBLIC_LINE_ID ?? "@techpana",
+  lineId: process.env.NEXT_PUBLIC_LINE_ID ?? "@techanap",
 };
 
 export function buildLineMessageUrl(message: string) {

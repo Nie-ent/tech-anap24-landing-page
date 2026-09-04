@@ -74,11 +74,11 @@ export default async function LocaleLayout({
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "TechPana",
+    name: "Tech A-Nap",
     description:
       locale === "th"
-        ? "TechPana รับพัฒนาเว็บไซต์ แอปพลิเคชัน และระบบซอฟต์แวร์ครบวงจร"
-        : "TechPana builds websites, apps, and custom software.",
+        ? "Tech A-Nap รับพัฒนาเว็บไซต์ แอปพลิเคชัน และระบบซอฟต์แวร์ครบวงจร"
+        : "Tech A-Nap builds websites, apps, and custom software.",
     areaServed: ["TH", "Worldwide"],
     availableLanguage: ["th", "en"],
   };
