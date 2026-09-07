@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -14,7 +13,6 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
-import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { navSections, siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
@@ -23,11 +21,11 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/85 backdrop-blur-sm">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <header className="sticky top-0 z-40 px-3 pt-3">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between rounded-2xl border border-white/70 bg-white/75 px-4 shadow-[0_12px_40px_rgba(47,62,70,0.08)] backdrop-blur-xl sm:px-5">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/light_logo.png"
             alt={siteConfig.name}
             width={1535}
             height={903}
@@ -41,7 +39,7 @@ export function SiteHeader() {
             <a
               key={s.id}
               href={`#${s.id}`}
-              className="rounded-md px-3 py-1.5 text-[13.5px] text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              className="rounded-full px-3 py-1.5 text-[13.5px] text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
             >
               {t(s.labelKey)}
             </a>
@@ -49,7 +47,6 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <ThemeToggle />
           <LocaleSwitcher />
           <a
             href={siteConfig.lineUrl}
@@ -89,9 +86,8 @@ export function SiteHeader() {
               ))}
             </nav>
             <div className="mt-auto flex flex-col gap-3 border-t border-border p-4">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center">
                 <LocaleSwitcher />
-                <ThemeToggle />
               </div>
               <a
                 href={siteConfig.lineUrl}

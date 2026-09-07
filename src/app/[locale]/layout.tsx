@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { IBM_Plex_Sans, IBM_Plex_Sans_Thai, IBM_Plex_Mono } from "next/font/google";
+import { DM_Sans, Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
-import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
@@ -12,24 +11,17 @@ import { ScrollProgress } from "@/components/motion/scroll-progress";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
-const plexSans = IBM_Plex_Sans({
-  variable: "--font-plex-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600", "700"],
   display: "swap",
 });
 
-const plexSansThai = IBM_Plex_Sans_Thai({
-  variable: "--font-plex-sans-thai",
-  subsets: ["thai", "latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -86,8 +78,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${plexSans.variable} ${plexSansThai.variable} ${plexMono.variable} h-full antialiased`}
-      suppressHydrationWarning
+      className={`${inter.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <script
@@ -96,17 +87,15 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
         <div className="grain-overlay" />
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <NextIntlClientProvider>
-            <SmoothScroll>
-              <ScrollProgress />
-              <SiteHeader />
-              <main className="flex-1">{children}</main>
-              <SiteFooter />
-              <Toaster position="bottom-right" richColors />
-            </SmoothScroll>
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider>
+          <SmoothScroll>
+            <ScrollProgress />
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+            <Toaster position="bottom-right" richColors />
+          </SmoothScroll>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
